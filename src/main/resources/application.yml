@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: t1_security
+  datasource:
+    url: jdbc:postgresql://localhost:5433/t1security
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: ec7ff372fac220151de974d4341aac6dd73ca9fe82aa50a17cdc701a107afe1d2c77b2de494ebba5347754e421b57aa781f725cdd14f5751ff09e814cba4c2da98ee5ab1626c58c987e2cfcdf84d36460a64e5f4470272d95e4157c6b0e5d566e1156c1c75a46fee022c4a2d04c9bd6dc0528592681bc8418aa5279d8de8ecfb790d50156954ea40357a73a883b4885eb367830c2aef27bf1f52a3e84731c8d23ea39a435d781c52a582b83e22f3ea99fa85b2304d4d6b2f830944a4df49c4d573777a7251d847eb10de5a2cb7cbe0afdb2dc353c86c789ce130bcb90d521946e8163e72f4edee007ae43d01e9eb370105079d80fc248d200a9b821f4cd3764c
+  tokenExpiration: 60000
+  refreshTokenExpiration: 600000
